@@ -42,11 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\MemoryTradeDAO.cs" />
+    <Compile Include="Data\MemoryStockDAO.cs" />
+    <Compile Include="Model\Stock.cs" />
+    <Compile Include="Model\StockType.cs" />
+    <Compile Include="Model\Trade.cs" />
+    <Compile Include="Model\TradeIndicator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\StockMarketService.cs" />
+    <Compile Include="Services\TradeMarketService.cs" />
+    <Compile Include="Util\StockExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
